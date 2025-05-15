@@ -1,14 +1,14 @@
 // 2.3.6. Exercice 6
 // Résous le sujet 2 en ne faisant qu'un seul passage sur ta liste.
 
-function viewBuildingOnce(arr) {
-  let maxHigh = 0;
+function viewBuildingOnce(heights) {
+  let max = 0;
   let count = 0;
 
-  for (let i = arr.length - 1; i >= 0; i--) {
-    if (arr[i] > maxHigh) {
+  for (let i = heights.length - 1; i >= 0; i--) {
+    if (heights[i] > max) {
       count++;
-      maxHigh = arr[i];
+      max = heights[i];
     }
   }
 
